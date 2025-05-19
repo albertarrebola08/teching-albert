@@ -7,6 +7,121 @@ Template:     understrap
 Version:      1.0.0
 Text Domain:  understrap-child
 */
-body {
-  background: #9bd393;
+/* Puedes poner esto en tu style.css o .scss */
+
+/* HOME PAGE - FRONT PAGE */
+
+.bg-gradient-arsa {
+  background: linear-gradient(135deg, #86e3ce 0%, #d0e6a5 100%);
+  border-radius: 1.5rem;
+  padding: 2.5rem 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 24px 0 rgba(98, 158, 115, 0.1);
+  animation: fadeInBg 1s;
+}
+
+@keyframes fadeInBg {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.section-title-arsa {
+  letter-spacing: 2px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #57a1d8 10%, #6be585 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeIn 1s 0.2s both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.home .card {
+  border-radius: 1.2rem;
+  box-shadow: 0 6px 18px rgba(51, 51, 51, 0.06);
+  transition: transform 0.18s, box-shadow 0.18s;
+  overflow: hidden;
+  animation: cardPop 0.7s cubic-bezier(0.22, 1, 0.36, 1) backwards;
+}
+
+.home .card:hover {
+  transform: translateY(-6px) scale(1.02) rotateZ(-1deg);
+  box-shadow: 0 14px 32px rgba(99, 190, 123, 0.18);
+  border-color: #55c286;
+}
+
+@keyframes cardPop {
+  from {
+    opacity: 0;
+    transform: scale(0.97) translateY(32px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.card.modulo-arsa img {
+  filter: brightness(0.98) saturate(1.1);
+  transition: filter 0.18s;
+}
+
+.card.modulo-arsa:hover img {
+  filter: brightness(1.04) saturate(1.22);
+}
+
+.btn-arsa {
+  background: linear-gradient(90deg, #34b5b7 0, #90df86 100%);
+  border: none;
+  color: #fff !important;
+  font-weight: 700;
+  border-radius: 2rem;
+  box-shadow: 0 2px 8px 0 #90df8642;
+  padding: 0.75rem 2.5rem;
+  transition: background 0.22s, box-shadow 0.22s, color 0.22s;
+}
+
+.btn-arsa:hover {
+  background: linear-gradient(90deg, #90df86 0, #34b5b7 100%);
+  color: #fff !important;
+  box-shadow: 0 6px 18px 0 #34b5b76b;
+  letter-spacing: 1.5px;
+}
+
+.ratio {
+  border-radius: 1rem;
+  box-shadow: 0 6px 18px 0 #0001;
+  margin-bottom: 1rem;
+}
+
+.home a {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.18s;
+}
+
+/* SINGLE MODULO */
+
+.hero-img {
+  height: 300px !important;
+  background: linear-gradient(135deg, #86e3ce 0%, #d0e6a5 100%);
+  object-fit: cover;
 }
