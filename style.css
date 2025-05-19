@@ -1,0 +1,12 @@
+/*
+Theme Name:   TECHing Albert
+Theme URI:    https://tusitio.com/
+Description:  Tema hijo de UnderStrap para personalizaciones
+Author:       Albert Arrebola
+Template:     understrap
+Version:      1.0.0
+Text Domain:  understrap-child
+*/
+body {
+  background: #9bd393;
+}
