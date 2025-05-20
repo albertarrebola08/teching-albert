@@ -16,7 +16,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "¡Bienvenidos a TECHing ARS. \r\nEl sitio web de vuestro profe que podréis usar siempre que necesitéis!",
+            "default_value": "La plataforma web del vostre profe que podreu utilitzar sempre que necesiteu!",
             "maxlength": "",
             "rows": "",
             "placeholder": "",
@@ -58,5 +58,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1747684266
+    "modified": 1747761769
 }

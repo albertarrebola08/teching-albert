@@ -27,29 +27,26 @@
             "bidirectional_target": []
         },
         {
-            "key": "field_imagen_principal_ra",
-            "label": "Imagen principal",
-            "name": "imagen_principal",
+            "key": "field_682cd2beeb58b",
+            "label": "Horas del RA",
+            "name": "horas_del_ra",
             "aria-label": "",
-            "type": "image",
+            "type": "number",
             "instructions": "",
             "required": 0,
-            "conditional_logic": false,
+            "conditional_logic": 0,
             "wrapper": {
                 "width": "",
                 "class": "",
                 "id": ""
             },
-            "return_format": "url",
-            "preview_size": "medium",
-            "library": "all",
-            "min_width": 0,
-            "min_height": 0,
-            "min_size": 0,
-            "max_width": 0,
-            "max_height": 0,
-            "max_size": 0,
-            "mime_types": ""
+            "default_value": "",
+            "min": "",
+            "max": "",
+            "placeholder": "",
+            "step": "",
+            "prepend": "",
+            "append": ""
         },
         {
             "key": "field_descripcion_breve",
@@ -220,16 +217,16 @@
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
-            "conditional_logic": false,
+            "conditional_logic": 0,
             "wrapper": {
                 "width": "",
                 "class": "",
                 "id": ""
             },
+            "default_value": "Aquí podràs trobar materials per evaluarte, possibles preguntes, PDFs , enllços a quationaris, enunciats d'examens.... etc",
             "tabs": "all",
             "toolbar": "full",
             "media_upload": 1,
-            "default_value": "",
             "delay": 0
         },
         {
@@ -267,9 +264,9 @@
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": [],
+    "hide_on_screen": "",
     "active": true,
     "description": "",
-    "show_in_rest": false,
-    "modified": 1747691408
+    "show_in_rest": 0,
+    "modified": 1747768840
 }

@@ -1,0 +1,17 @@
+{
+  "name": "understrap-child",
+  "version": "1.0.0",
+  "description": "**Portal modular y personal de Formación Profesional**  \r Creado y mantenido por **Albert Arrebola** para organizar, experimentar y compartir materiales docentes de FP de forma profesional, moderna y totalmente flexible.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass scss/style.scss style.css --no-source-map --style=expanded --watch"
+    
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.89.0"
+  }
+}

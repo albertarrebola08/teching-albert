@@ -31,7 +31,7 @@ get_template_part( 'global-templates/header', 'hero' );
 	] );
 
 	if ( $ra_query->have_posts() ) : ?>
-		<h3 class="mt-5 mb-3">Resultados de aprendizaje de este módulo</h3>
+		<h3 class="mt-5 mb-3">Resultats d'aprenentatge del mòdul</h3>
 		<ul class="list-group mb-4">
 			<?php while ( $ra_query->have_posts() ) :
 				$ra_query->the_post(); ?>
@@ -47,7 +47,7 @@ get_template_part( 'global-templates/header', 'hero' );
 		</ul>
 		<?php wp_reset_postdata(); ?>
 	<?php else : ?>
-		<p class="text-muted">No hay resultados de aprendizaje aún para este módulo.</p>
+		<p class="text-muted">No exixteixen RA's associats al mòdul actualment</p>
 	<?php endif; ?>
 
 </div>

@@ -12,7 +12,7 @@ defined( 'ABSPATH' ) || exit;
 
 	<?php if ( $modulo = get_field( 'modulo_padre' ) ) : ?>
 		<p>
-			<strong>Módulo:</strong>
+			<strong>Mòdul:</strong>
 			<a href="<?php echo get_permalink( $modulo->ID ); ?>">
 				<?php echo esc_html( $modulo->post_title ); ?>
 			</a>
@@ -31,22 +31,21 @@ defined( 'ABSPATH' ) || exit;
 	<!-- Tabs Bootstrap 4 -->
 	<ul class="nav nav-tabs mb-4" id="raTab" role="tablist">
 		<li class="nav-item">
-			<a class="nav-link active" id="tab-estudiar" data-toggle="tab" href="#estudiar" role="tab">Qué vamos a
-				estudiar</a>
+			<a class="nav-link active" id="tab-estudiar" data-toggle="tab" href="#estudiar" role="tab">Què
+				estudiarem?</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" id="tab-video" data-toggle="tab" href="#video" role="tab">Vídeo de bienvenida</a>
+			<a class="nav-link" id="tab-video" data-toggle="tab" href="#video" role="tab">Vídeo de benvinguda</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" id="tab-desarrollo" data-toggle="tab" href="#desarrollo" role="tab">Desarrollo del
-				contenido</a>
+			<a class="nav-link" id="tab-desarrollo" data-toggle="tab" href="#desarrollo" role="tab">Desenvolupament del
+				contingut</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" id="tab-quiz" data-toggle="tab" href="#quiz" role="tab">Comprueba lo que has
-				aprendido</a>
+			<a class="nav-link" id="tab-quiz" data-toggle="tab" href="#quiz" role="tab">Comprova el que has après</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" id="tab-mas" data-toggle="tab" href="#mas" role="tab">Quiero saber más</a>
+			<a class="nav-link" id="tab-mas" data-toggle="tab" href="#mas" role="tab">Saber més</a>
 		</li>
 	</ul>
 	<div class="tab-content" id="raTabContent">
@@ -73,13 +72,13 @@ defined( 'ABSPATH' ) || exit;
 								<div class="mb-2"><?php echo $vid; ?></div>
 							<?php endif; ?>
 							<?php if ( $arc = get_sub_field( 'archivo_bloque' ) ) : ?>
-								<p><a href="<?php echo esc_url( $arc['url'] ); ?>" download>Descargar archivo</a></p>
+								<p><a href="<?php echo esc_url( $arc['url'] ); ?>" download>Descarregar arxiu</a></p>
 							<?php endif; ?>
 						</div>
 					</div>
 				<?php endwhile; ?>
 			<?php else : ?>
-				<p class="text-muted">No hay bloques de contenido aún.</p>
+				<p class="text-muted">Sense continguts actualment.</p>
 			<?php endif; ?>
 		</div>
 		<div class="tab-pane fade" id="quiz" role="tabpanel">

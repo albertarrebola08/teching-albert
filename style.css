@@ -8,51 +8,48 @@ Version:      1.0.0
 Text Domain:  understrap-child
 */
 /* Puedes poner esto en tu style.css o .scss */
-
 /* HOME PAGE - FRONT PAGE */
-
-.bg-gradient-arsa {
-  background: linear-gradient(135deg, #86e3ce 0%, #d0e6a5 100%);
-  border-radius: 1.5rem;
-  padding: 2.5rem 1rem;
-  margin-bottom: 2rem;
-  box-shadow: 0 8px 24px 0 rgba(98, 158, 115, 0.1);
-  animation: fadeInBg 1s;
+.home .bg-gradient-arsa {
+  background: linear-gradient(135deg, #034583 0%, #05305c 100%);
+  position: relative;
 }
-
-@keyframes fadeInBg {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
+.home .bg-gradient-arsa::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: url("https://i0.wp.com/www.canal12misiones.com/wp-content/uploads/2024/09/Clase-IA-1024x586-1.jpg") center/cover no-repeat;
+  opacity: 0.18;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+.home .bg-gradient-arsa > * {
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 575.98px) {
+  .home .bg-gradient-arsa::before {
+    opacity: 0.07;
   }
-
-  to {
-    opacity: 1;
-    transform: none;
+}
+.home .section-title-arsa {
+  font-size: 2.5rem;
+}
+@media (max-width: 575.98px) {
+  .home .section-title-arsa {
+    font-size: 1.45rem;
   }
 }
-
-.section-title-arsa {
-  letter-spacing: 2px;
-  font-weight: 800;
-  background: linear-gradient(90deg, #57a1d8 10%, #6be585 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: fadeIn 1s 0.2s both;
-}
-
 @keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(-20px);
   }
-
   to {
     opacity: 1;
     transform: none;
   }
 }
-
 .home .card {
   border-radius: 1.2rem;
   box-shadow: 0 6px 18px rgba(51, 51, 51, 0.06);
@@ -60,68 +57,72 @@ Text Domain:  understrap-child
   overflow: hidden;
   animation: cardPop 0.7s cubic-bezier(0.22, 1, 0.36, 1) backwards;
 }
-
+.home .card-img-top {
+  height: 150px !important;
+  object-fit: cover;
+}
 .home .card:hover {
   transform: translateY(-6px) scale(1.02) rotateZ(-1deg);
   box-shadow: 0 14px 32px rgba(99, 190, 123, 0.18);
   border-color: #55c286;
 }
-
 @keyframes cardPop {
   from {
     opacity: 0;
     transform: scale(0.97) translateY(32px);
   }
-
   to {
     opacity: 1;
     transform: none;
   }
 }
-
-.card.modulo-arsa img {
+.home .card.modulo-arsa img {
   filter: brightness(0.98) saturate(1.1);
   transition: filter 0.18s;
 }
-
-.card.modulo-arsa:hover img {
+.home .card.modulo-arsa:hover img {
   filter: brightness(1.04) saturate(1.22);
 }
-
-.btn-arsa {
+.home .btn-arsa {
   background: linear-gradient(90deg, #34b5b7 0, #90df86 100%);
   border: none;
   color: #fff !important;
   font-weight: 700;
   border-radius: 2rem;
-  box-shadow: 0 2px 8px 0 #90df8642;
+  box-shadow: 0 2px 8px 0 rgba(144, 223, 134, 0.2588235294);
   padding: 0.75rem 2.5rem;
   transition: background 0.22s, box-shadow 0.22s, color 0.22s;
 }
-
-.btn-arsa:hover {
+.home .btn-arsa:hover {
   background: linear-gradient(90deg, #90df86 0, #34b5b7 100%);
   color: #fff !important;
-  box-shadow: 0 6px 18px 0 #34b5b76b;
+  box-shadow: 0 6px 18px 0 rgba(52, 181, 183, 0.4196078431);
   letter-spacing: 1.5px;
 }
-
-.ratio {
+.home .ratio {
   border-radius: 1rem;
-  box-shadow: 0 6px 18px 0 #0001;
+  box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.0666666667);
   margin-bottom: 1rem;
 }
-
 .home a {
   color: #000;
   text-decoration: none;
   transition: color 0.18s;
 }
+.home .embed-responsive {
+  border-radius: 1rem;
+  box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.0666666667);
+  margin-bottom: 1rem;
+}
 
-/* SINGLE MODULO */
-
+/*hero header*/
 .hero-img {
   height: 300px !important;
   background: linear-gradient(135deg, #86e3ce 0%, #d0e6a5 100%);
   object-fit: cover;
+}
+@media (max-width: 767.98px) {
+  .hero-img {
+    height: 150px !important;
+  }
 }
